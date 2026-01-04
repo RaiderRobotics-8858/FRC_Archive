@@ -228,8 +228,8 @@ public class Robot extends TimedRobot {
         double ySpeed = m_Controller.getLeftY();
 
         // add deadzone to center of joysticks
-        xSpeed = MathUtil.applyDeadband(xSpeed, 0.1) * 0.85; // slow down turn speed to help with precision
-        ySpeed = MathUtil.applyDeadband(ySpeed, 0.1);
+        xSpeed = MathUtil.applyDeadband(xSpeed, 0.1) * 0.4; // slow down turn speed to help with precision
+        ySpeed = MathUtil.applyDeadband(ySpeed, 0.1) * 0.2;
 
         // apply acceleration limiter to joystick input
         xSpeed = m_RateLimiterRight.calculate(xSpeed);

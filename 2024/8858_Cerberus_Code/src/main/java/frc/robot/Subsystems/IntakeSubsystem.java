@@ -26,6 +26,6 @@ public class IntakeSubsystem extends SubsystemBase {
 
     // sets the motor speed with the parameter intakeSpeed
     public static void setMotor(double intakeSpeed) {
-        intakeMotor.set(-intakeSpeed);
+        intakeMotor.set(intakeSpeed);
     }
 }

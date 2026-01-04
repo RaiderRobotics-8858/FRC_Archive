@@ -30,7 +30,8 @@ public class LauncherControls extends SubsystemBase {
 
     public static void launcherInput() {
         if (m_Controller.getBButtonPressed() && !activateLaunchSequence) {
-            launchSpeed = Constants.kSpeakerShooterSpeed;
+            launchSpeed = 0.3;
+            // launchSpeed = Constants.kSpeakerShooterSpeed;
             targetRPM = Constants.kTargetSpeakerVelocity;
             activateLaunchSequence = true;
             start = AutonomousMain.getTime();

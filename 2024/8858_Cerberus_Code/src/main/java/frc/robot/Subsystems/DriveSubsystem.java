@@ -44,8 +44,13 @@ public class DriveSubsystem extends SubsystemBase {
 
     // Sets the Motor Speeds with the parameters ySpeed and xSpeed
     public static void setMotors(double ySpeed, double xSpeed) {
-        m_robotDrive.arcadeDrive(ySpeed, xSpeed);
-        m_robotDrive2.arcadeDrive(ySpeed, xSpeed);
+        double left_motor_speed = ySpeed - xSpeed;
+        double right_motor_speed = -ySpeed - xSpeed;
+
+        leftBackMotor.set(left_motor_speed);
+        leftFrontMotor.set(left_motor_speed);
+        rightBackMotor.set(-right_motor_speed);
+        rightFrontMotor.set(right_motor_speed);
     }
 
 }

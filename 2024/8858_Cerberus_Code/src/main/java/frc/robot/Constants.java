@@ -50,9 +50,9 @@ public final class Constants {
 
     public static final double kArmLimiter = .5;
 
-    public static final double armP = .1;
+    public static final double armP = .12;
     public static final double armI = 0;
-    public static final double armD = 0;
+    public static final double armD = .001;
 
     public static final double kUpperLimit = 2.5;
     public static final double kLowerLimit = 2;
