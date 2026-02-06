@@ -16,7 +16,7 @@ import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
-bug;
+
 import frc.robot.Constants.OperatorConstants;
 import frc.robot.Autonomous.AutonomousMain;
 import frc.robot.Controls.ArmControls;
