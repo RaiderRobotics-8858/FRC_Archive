@@ -1,4 +1,4 @@
-name: Check Doris Build
+name: Check Cerberus Build
 on:
   push:
     branches:
