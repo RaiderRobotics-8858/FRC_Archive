@@ -4,12 +4,12 @@ on:
     branches:
       - main
     paths:
-      - '2025/8858_Cerberus_Code/**'
+      - '2024/8858_Cerberus_Code/**'
   pull_request:
     branches:
       - main
     paths:
-      - '2025/8858_Cerberus_Code/**'
+      - '2024/8858_Cerberus_Code/**'
   workflow_dispatch:
 
 jobs:
@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: 2025/8858_Cerberus_Code
+        working-directory: 2024/8858_Cerberus_Code
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
